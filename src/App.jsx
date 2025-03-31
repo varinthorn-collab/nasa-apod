@@ -2,6 +2,7 @@ import { AxiosAsyncAwait } from "./components/AxiosAsyncAwait";
 import { AxiosThenCatch } from "./components/AxiosThenCatch";
 import { FetchPromise } from "./components/FetchPromise";
 import { APIExplorer } from "./components/APIExplorer";
+import { FetchAsyncAwait } from "./components/FetchAsyncAwait";
 // import { APIExplorer2 } from "./components/APIExplorer2";
 
 export default function App() {
@@ -16,7 +17,8 @@ export default function App() {
             <span className="font-semibold">Examples:</span>
             <li>Axios with Async/Await</li>
             <li>Axios with Then/Catch</li>
-            <li>Fetch Promise</li>
+            <li>Fetch Async/Await</li>
+            <li>Fetch Then/Catch</li>
             <li>API Explorer</li>
           </ul>
         </section>
@@ -26,6 +28,9 @@ export default function App() {
         </section>
         <section className="w-full p-5 bg-amber-100 flex">
           <AxiosThenCatch />
+        </section>
+        <section className="w-full p-5 bg-amber-100 flex">
+          <FetchAsyncAwait />
         </section>
         <section className="w-full p-5 bg-amber-100 flex">
           <FetchPromise />

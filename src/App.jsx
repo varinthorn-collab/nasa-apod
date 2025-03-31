@@ -3,7 +3,7 @@
 // import { FetchPromise } from "./components/FetchPromise";
 // import { APIExplorer } from "./components/APIExplorer";
 // import { FetchAsyncAwait } from "./components/FetchAsyncAwait";
-import { Nasa } from "./components/nasa";
+import { Nasa } from "./components/Nasa";
 // import { APIExplorer2 } from "./components/APIExplorer2";
 
 export default function App() {

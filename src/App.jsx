@@ -39,7 +39,7 @@ export default function App() {
         <section className="w-full p-5 bg-amber-100 flex">
           <APIExplorer />
         </section> */}
-        <section className="w-full p-5 bg-amber-100 flex">
+        <section className="w-full p-5 rounded-lg flex">
           <Nasa/>
         </section>
         {/* <section className="w-full p-5 bg-amber-100 flex">

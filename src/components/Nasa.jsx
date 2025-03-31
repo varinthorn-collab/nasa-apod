@@ -25,25 +25,25 @@ export function Nasa() {
   }, []);
 
   return (
-    <div className="min-h-screen w-full bg-gray-100 p-6 flex flex-col items-center">
+    <div className="min-h-screen w-full bg-gray-100 p-6 flex flex-col items-center rounded-lg">
       <h1 className="text-2xl font-bold mb-4 text-center">NASA APOD</h1>
 
       {loading && <p className="text-center">Loading...</p>}
       {error && <p className="text-center text-red-500">{error}</p>}
 
-      {data && data.media_type === "video" && (
-        <div className="w-full max-w-2xl">
-          <h2 className="text-lg font-semibold text-center mb-8">{data.title}</h2>
-          <div className="aspect-w-16 aspect-h-9">
+      <div className="w-full max-w-3xl bg-white shadow-lg rounded-xl p-6 flex flex-col items-center">
+          <h2 className="text-xl font-semibold text-center text-gray-900 mb-6">{data.title}</h2>
+          <div className="rounded-lg overflow-hidden shadow-md w-full aspect-w-16 aspect-h-9">
             <iframe
               className="w-full h-64 sm:h-96"
               src={data.url}
               allowFullScreen
             ></iframe>
           </div>
-          <p className="text-gray-600 pt-8">{data.explanation}</p>
+          <p className="text-lg text-gray-600 text-center mb-8 pt-4">Date: {data.date}</p>
+          <h2 className="text-lg font-semibold text-center ">Description</h2>
+          <p className="text-gray-600 pt-4">{data.explanation}</p>
         </div>
-      )}
     </div>
   );
 }
